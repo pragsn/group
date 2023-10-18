@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/library-with-row-bookshelves-light-bulb-it_875864-35.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .signup-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 72.5%;
+    text-align: left;
+    margin-top: 5px;
+    color: #088F8F;
+  }
+  .signup-container h2 {
+    margin-top: 0;
+    color: #CD7F32;
+    text-align: center;
+    font-size: 25px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .btn {
+    background-color: #CD7F32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+  }
+  table {
+    width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.7) ;
+  }
+  th, td {
+    padding: 20px;
+    text-align: left;
+  }
+  th {
+    background-color: rgba(255, 255, 255, 0.7);
+    color:#088F8F ;
+  }
+</style>
+</head>
+<body>
+<h1>LIBRARY MANAGEMENT SYSTEM</h1>
+<div class="signup-container">
+  <h2>Welcome to Vishnu Library</h2>
+  <form action="/thanks" method="POST" id="form">
+    <div class="input-group">
+      <label for="bookname">Book Name</label>
+      <input type="text" id="bookname" name="bookname" placeholder="Book Name" required>
+    </div>
+    <div class="input-group">
+      <label for="authorname">Author Name</label>
+      <input type="text" id="authorname" name="authorname" placeholder="Author Name" required>
+    </div>
+    <div class="input-group">
+      <label for="genre">Genre</label>
+      <input type="text" id="genre" name "genre" placeholder="Genre" required>
+    </div>
+    <div class="input-group">
+      <label for="accountnumber">Account No</label>
+      <input type="number" id="accountno" name="accountnumber" placeholder="Account No" required>
+    </div>
+    <div class="input-group">
+      <label for="callnumber">Call No</label>
+      <input type="number" id="callno" name="callnumber" placeholder="Call No" required>
+    </div>
+    <div class="input-group">
+      <label for="dateofissue">Date of Issue</label>
+      <input type="date" id="dateofissue" name="dateofissue" placeholder="Date of Issue" required>
+    </div>
+    <div class="input-group">
+      <label for="returndate">Return Date</label>
+      <input type="date" id="returndate" name="returndate" placeholder="Return Date" required>
+    </div>
+    <div class="input">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+</div>
+<div class="Number of books issued">
+  <table id="table">
+    <tr>
+      <th>Book Name</th>
+      <th>Account No</th>
+      <th>Call No</th>
+      <th>Date of Issue</th>
+      <th>Return Date</th>
+    </tr>
+  </table>
+</div>
+<script>
+const form = document.getElementById("form");
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const h = document.getElementById("bookname");
+  const a = document.getElementById("accountno");
+  const n = document.getElementById("callno");
+  const i = document.getElementById("dateofissue");
+  const f = document.getElementById("returndate");
+  const a4 = document.getElementById("table");
+  const ari = a4.insertRow();
+  const ka = ari.insertCell();
+  const chi = ari.insertCell();
+  const ri = ari.insertCell();
+  const mei = ari.insertCell();
+  const ki = ari.insertCell();
+  ka.innerHTML = h.value;
+  chi.innerHTML = a.value;
+  ri.innerHTML = n.value;
+  mei.innerHTML = i.value;
+  ki.innerHTML = f.value;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Home</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set a background color for the entire page */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      background: url('https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Style the header links */
+    .header {
+      background-color:#CC7722;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .kothi {
+      padding: 10px;
+      border: 2px solid  #F4BB44;
+      border-radius: 0px;
+      background-color: #F4BB44;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #353935;
+      transition: color 0.3s;
+      font-size: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 100;
+    }
+
+    .header a:hover {
+      color: #66c2ff;
+    }
+
+    /* Style the title */
+    .title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 24px;
+      color:#483248;
+    }
+
+    /* Center the content */
+    .container {
+      width:417px;
+      margin-top: 400px;
+      margin-left: 950px;
+      padding: 70px;
+      background-color: #E3735E;
+      border-radius: 0px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<body>
+    <div class="header">
+      <div class="kothi"><a href="/userlogin">User Login</a></div>
+      <div class="kothi"><a href="/adminlogin">Admin Login</a></div>
+      <div class="kothi"><a href="/signup">Signup</a></div>
+      <div class="kothi"><a href="/logout">Log Out</a></div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Welcome to the Library</h1>
+        <!-- Your content goes here -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.inc.com/uploaded_files/image/1920x1080/getty_671101136_391053.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Increased transparency */
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 500px;
+    margin-right: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    margin-left: 100px;
+  }
+  .signup-container h2 {
+    margin: 0;
+    text-align: center;
+    color: #FF5733;
+  }
+  .input-group {
+    margin: 25px;
+  }
+  .input-group label {
+    font-weight: bold;
+    color: #097969;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+  }
+  .btn {
+    background-color: #FF5733;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h2>Welcome to Vishnu Library</h2>
+  <form action="/done" method="POST">
+    <div class="input-group">
+      <label for="bookname">Book Name</label>
+      <input type="text" id="bookname" name="bookname" placeholder="Book Name" required>
+    </div>
+    <div class="input-group">
+      <label for="accountnumber">Account No</label>
+      <input type="number" id="accountnumber" name="accountnumber" placeholder="Account Number" required>
+    </div>
+    <div class="input-group">
+      <label for="callnumber">Call No</label>
+      <input type="number" id="callnumber" name="callnumber" placeholder="Call Number" required>
+    </div>
+    <div class="input-group">
+      <label for="dateofissue">Date of Update</label>
+      <input type="date" id="dateofissue" name="dateofissue" required>
+    </div>
+    <div class="input">
+      <button type="submit" class="btn">ADD</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
